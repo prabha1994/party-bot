@@ -92,7 +92,7 @@ RULES:
 
 if mode == "Guest Chat":
 
-    st.title("🎉 Party Vibe Assistant")
+    st.title("🎉 Welcome to theprabhs house party!")
 
     guest_name = st.text_input("Enter your name")
 
@@ -234,3 +234,4 @@ elif mode == "Host Dashboard":
         )
 
         st.write(response.choices[0].message.content)
+

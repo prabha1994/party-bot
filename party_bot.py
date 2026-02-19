@@ -5,7 +5,9 @@ from datetime import datetime
 
 # ---------------- CONFIG ---------------- #
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+
+st.set_page_config(page_title="Party Assistant", page_icon="🎉")
 
 # ---------------- DATABASE ---------------- #
 
@@ -234,4 +236,5 @@ elif mode == "Host Dashboard":
         )
 
         st.write(response.choices[0].message.content)
+
 
